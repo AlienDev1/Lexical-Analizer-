@@ -46,15 +46,47 @@ public class myScanner{
 				switch ((char) next){
 					
 					case '"':
-						System.out.println("Token:  " + token.ordinaryChar());
+						System.out.println("Token:  " + token.sval);
 						break;
 
-					case '\'':	
+					case ')':	
 						System.out.println("Token:   " + token.sval);
 						break;
 
-					default:
-						System.out.println("Special:    " + (char)next);	
+					case '/':	
+						System.out.println("Token:   " + token.sval);
+						break;
+
+					case 'x':	
+						System.out.println("Token:   " + token.sval);
+						break;
+
+					case '(':	
+						System.out.println("Token:   " + token.sval);
+						break;
+						
+					case '<':	
+						System.out.println("Token:   " + token.sval);
+						break;
+						
+					case '0':	
+						System.out.println("Token:   " + token.sval);
+						break;
+
+					case '1':	
+						System.out.println("Token:   " + token.sval);
+						break;
+
+					case '4':	
+						System.out.println("Token:   " + token.sval);
+						break;
+						
+					case '=':	
+						System.out.println("Token:   " + token.sval);
+						break;																		
+
+					default:   
+						System.out.println("S:    " + (char)next);	
 				}
 			}	
 		}
