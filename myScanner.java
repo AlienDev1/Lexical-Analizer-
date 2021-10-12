@@ -18,9 +18,17 @@ public class myScanner{
 
 		// creating the token here
 		StreamTokenizer token = new StreamTokenizer(myReader);
-		token.ordinaryChar('.');
-		token.ordinaryChar('-');
+		token.ordinaryChar('~');
+		token.ordinaryChar(')');
 		token.ordinaryChar('/');
+		token.ordinaryChar('x');
+		token.ordinaryChar('(');
+		token.ordinaryChar('<');
+		token.ordinaryChar('0');
+		token.ordinaryChar('1');
+		token.ordinaryChar('4');
+		token.ordinaryChar('=');
+
 
 		// keeping current token wihin the variable <nextToken>
 
@@ -38,15 +46,15 @@ public class myScanner{
 				switch ((char) next){
 					
 					case '"':
-						System.out.println("STRING:  " + token.sval);
+						System.out.println("Token:  " + token.ordinaryChar());
 						break;
 
 					case '\'':	
-						System.out.println("CHAR:   " + token.sval);
+						System.out.println("Token:   " + token.sval);
 						break;
 
 					default:
-						System.out.println("FUNCT:    " + (char)next);	
+						System.out.println("Special:    " + (char)next);	
 				}
 			}	
 		}
